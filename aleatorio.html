@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adivina el número</title>
+  <link href="styles.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <video autoplay muted loop id="videoFondo"><source src="espacio.mp4" type="video/mp4"></video>
+  <div class="contenido">
+
+  <h1>Adivina el número</h1>
+  <p>¿Puedes adivinar el número del 1 al 100?</p>
+  <label for="aleatorio">¿Qué número crees que saldrá? </label>
+  <input type="text" id="aleatorio">
+  <button onclick = "resultadoAleatorio(); cambiarColor()">Jugar</button>
+ 
+  <h2 id=R>Resultado</h2>
+  <p id="resultado" style = "color: rgb(255, 255, 255);"></p>
+  <p id="mensajeError" style="color:red;"></p>
+  <p id="historial"></p>
+
+</div>
+
+  <script src="index.js"></script>
+</body>
+
+</html>

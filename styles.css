@@ -1,0 +1,21 @@
+
+#videoFondo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;  /* Asegura que ocupe todo el ancho */
+    height: 100%; /* Asegura que ocupe toda la altura */
+    z-index: -1; /* Queda debajo del contenido */
+    object-fit: cover; /* Ajusta el video sin deformarse */
+}
+
+/* Estilos para el contenido */
+.contenido {
+    position: relative;
+    z-index: 1;
+    color: rgb(121, 19, 6);
+}
+
+h1 {
+    color: rgb(151, 10, 128);
+}
